@@ -1,0 +1,52 @@
+/* 🌸 General */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* 🌅 Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),
+              url('https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_1280.jpg') center/cover no-repeat;
+  background-attachment: fixed;
+}
+
+.hero h1 {
+  animation: fadeInDown 1.5s ease;
+}
+
+.hero p {
+  animation: fadeInUp 2s ease;
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 💎 Cards */
+.card {
+  border-radius: 15px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* 🌟 CTA Section */
+.cta {
+  background: linear-gradient(to right, #007bff, #6610f2);
+}
+
+/* 🦶 Footer */
+footer {
+  font-size: 0.9rem;
+}
